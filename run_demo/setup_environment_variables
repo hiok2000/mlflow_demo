@@ -4,7 +4,7 @@
 ###
 
 # mlflow version to install
-export MLFLOW_VERSION=0.9.0
+export MLFLOW_VERSION=1.5.0
 
 # directory containing demonstration source code
 export MLFLOW_DEMO_DIRECTORY=/path/to/directory/for/local/repo
@@ -16,8 +16,8 @@ export MLFLOW_TRACKING_DIRECTORY=/path/to/directory/for/tracking-artifacts
 export MLFLOW_TRACKING_URI=http://mlflow_tracker:5000
 
 # backend store
-#export MLFLOW_BACKEND_STORE=postgresql://mlflow_user:mlflow_pw@pgdb/mlflow_db
-export MLFLOW_BACKEND_STORE=/tracking
+export MLFLOW_BACKEND_STORE=postgresql://mlflow_user:mlflow_pw@pgdb/mlflow_db
+#export MLFLOW_BACKEND_STORE=/tracking
 
 ###
 # EXAMPLES
@@ -26,9 +26,9 @@ export MLFLOW_BACKEND_STORE=/tracking
 # MLFLOW_VERSION_TO_INSTALL="git+https://github.com/mlflow/mlflow.git@vx.y.z#egg=mlflow"  specific version from github
 ###
 # uncomment following to install mlflow from pypi
-#export MLFLOW_VERSION_TO_INSTALL="mlflow==${MLFLOW_VERSION}"
+export MLFLOW_VERSION_TO_INSTALL="mlflow==${MLFLOW_VERSION}"
 
 # uncomment following to install mlflow from github
-export MLFLOW_VERSION_TO_INSTALL="git+https://github.com/mlflow/mlflow.git@v${MLFLOW_VERSION}#egg=mlflow"  specific version from github
+#export MLFLOW_VERSION_TO_INSTALL="git+https://github.com/mlflow/mlflow.git@v${MLFLOW_VERSION}#egg=mlflow"  specific version from github
 
 
